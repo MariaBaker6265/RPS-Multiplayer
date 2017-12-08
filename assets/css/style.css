@@ -1,0 +1,43 @@
+.jumbotron-fluid {
+  
+  background-image: url("../images/paper.jpg");
+  background-repeat: repeat;
+  width: 100%;
+  text-align: center;
+ 
+ }
+
+.display-3 {
+  font-weight: bolder;
+  font-color: rgba(200, 100, 200, 1);
+  background-color: rgba(255, 255, 255, .9);
+
+}
+
+
+.container-fluid {
+  background-size: 100%;
+  padding: 50px;
+  background-image: url("../images/rocks.jpg");
+  background-repeat: no-repeat;
+ }
+
+
+#player1, #player2, #result {
+  border-width: 30px;
+  
+  border-style: solid;
+  padding: 50px;
+  border-style: solid;
+  border-color: rgba(50, 100, 200, 1);
+  text-align: center;
+  font-size: 30px;
+  font-weight: bolder;
+  color: rgba(200, 200, 200, 1);
+  background-color: rgba(50, 50, 100, .5);
+  margin-top: 100px;
+  margin-left: 40px;
+}
+
+
+

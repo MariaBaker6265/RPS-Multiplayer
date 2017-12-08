@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RPS Multiplayer</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!-- Bootstrap -->
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  	<meta charset="UTF-8">
+  	<!--Viewport-->
+  	<meta name="viewport" content="width=device-width, initial-scale=1">-->
+</head>
+<body>
+	<div class="jumbotron jumbotron-fluid">
+  		<div class="container">
+    	<h1 class="display-3">Rock Paper Scissors</h1>
+    	</div>
+	</div>
+
+
+	<div class="container-fluid">
+  	
+  	<div class="row">
+  		FORM here
+  	</div>
+  	<div class="row">
+    
+    	<div class="col-md-3" id="player1">
+    	<div >Waiting for Player 1</div>
+		<input class="btn btn-secondary" type="button" value="Rock" id="rock1">
+    	<input class="btn btn-secondary" type="button" value="Paper" id="paper1">
+    	<input class="btn btn-secondary" type="button" value="Scissors" id="scissors1">
+    	</div>
+    	
+
+      	<div class="col-md-3" id="result">Result</div>
+
+
+    	    
+      	<div class="col-md-3" id="player2">
+    	<div >Waiting for Player 2</div>
+    	<input class="btn btn-secondary" type="button" value="Rock" id="rock2">
+    	<input class="btn btn-secondary" type="button" value="Paper" id="paper2">
+    	<input class="btn btn-secondary" type="button" value="Scissors" id="scissors2">
+    	</div>
+
+    </div>
+
+  	</div>
+<!-- jQuery -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- LINK TO FIREBASE GOES HERE -->
+
+<script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-database.js"></script>
+
+<script>
+
+
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyACaxLFMDKFEC4xzvsrpLEE6QpiDPhnmiQ",
+    authDomain: "homework7-b42ee.firebaseapp.com",
+    databaseURL: "https://homework7-b42ee.firebaseio.com",
+    projectId: "homework7-b42ee",
+    storageBucket: "homework7-b42ee.appspot.com",
+    messagingSenderId: "417167007284"
+  };
+
+  firebase.initializeApp(config);
+
+  //Variable used to reference the database.
+  //var database = firebase.database();
+
+  //Initial values
+  var player1 = "";
+  var player2 = "";
+  var input1 = "";
+ 
+  //Function that runs when player1 or player2 presses a key.
+	$(document).ready(function() {
+        $('.btn').click(function() {
+           
+            input1 = $(this).attr("value");
+            console.log(input1);
+        });
+    });
+
+      firebase.database().ref().set() {
+
+      	input1:input1
+      }
+  
+</script>;
+	
+</body>
+</html>
